@@ -1,0 +1,15 @@
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\bin\Debug\net7.0\CS433TheoryOfAlgo.exe
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\bin\Debug\net7.0\CS433TheoryOfAlgo.deps.json
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\bin\Debug\net7.0\CS433TheoryOfAlgo.runtimeconfig.json
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\bin\Debug\net7.0\CS433TheoryOfAlgo.dll
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\bin\Debug\net7.0\CS433TheoryOfAlgo.pdb
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.csproj.AssemblyReference.cache
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.AssemblyInfoInputs.cache
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.AssemblyInfo.cs
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.csproj.CoreCompileInputs.cache
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.dll
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\refint\CS433TheoryOfAlgo.dll
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.pdb
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\CS433TheoryOfAlgo.genruntimeconfig.cache
+C:\Users\jcy_y\Desktop\Tech\VS_Code\CS433TheoryOfAlgo\obj\Debug\net7.0\ref\CS433TheoryOfAlgo.dll
