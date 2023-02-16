@@ -74,7 +74,7 @@ namespace _433_PA1
             Console.WriteLine("Number of inversions is: " + new InversionCounting(array, n).countInversions());
         }
 
-        public static void Main(String[] args)
+        public static void martin()
         {
             Console.WriteLine("*** Correctness Test ***\n");
             int[] sorting = { 19, 1, 12, 100, 7, 8, 4, -10, 14, -1, 97, -1009, 4210 };

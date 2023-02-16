@@ -18,9 +18,13 @@ namespace _433_PA1
             int[] C = new int[10];
             int[] T = new int[n];
 
-            // Init counter array
+            // Init counter array and output array
             for(int i = 0; i < C.Length; i++)
                 C[i] = 0;
+
+            // Init output array
+            for(int i = 0; i < n; i ++)
+                T[i] = 0;
 
             // Get counters for all digits, why are we using n instead of digits.Length?
             for(int i = 0; i < n; i++)
@@ -31,9 +35,11 @@ namespace _433_PA1
                 C[i] = C[i - 1] + C[i];
 
             // Use the counter array to figure out where to put elements of A
-            for(int i = n - 1; i >= 0; i--)
-                T[C[digits[i]]] = A[i];
-
+            for(int i = n - 1; i >= 0; i--) {
+                T[C[digits[i]] - 1] = A[i];
+                C[digits[i]]--;
+            }
+                
             // Overwrite A with T
             for(int i = 0; i < n; i++)
                 A[i] = T[i];
@@ -53,6 +59,7 @@ namespace _433_PA1
                 This part is sorta confusing, but know that all the numbers last digits
                 are being ripped off, modulo is used, and the digits array has values and is passed
                 as a parameter to the countsort method.*/
+
             int roundMult = 1;
             while (maxNum / roundMult > 0) {
                 for(int i = 0; i < n; i++)
@@ -65,25 +72,32 @@ namespace _433_PA1
         }
 
         public void radixSort()
-        { // complete this function
+        { // complete this function, okay
             // Init the positive and negative arrays
-            int[] neg = new int[] {};
-            int[] pos = new int[] {};
+            List<int> neg = new List<int>();
+            List<int> pos = new List<int>();
 
-            int negCount = 0, posCount = 0;
-            for(int i = 0; i < n; i++)
+            for(int i = 0; i < n; i++) {
                 if (this.array[i] < 0)
-                    neg[negCount] = this.array[i] * -1;
+                    neg.Add(this.array[i] * -1);
                 else
-                    pos[posCount] = this.array[i];
+                    pos.Add(this.array[i]);
+            }
+            
+            // Convert the dynamic arrays into static arrays, because that's what the radixsort uses
+            int[] negList = neg.ToArray();
+            int[] posList = pos.ToArray();
 
-            radixSortNonNeg(neg, neg.Length);
-            radixSortNonNeg(pos, pos.Length);
+            radixSortNonNeg(negList, negList.Length);
+            radixSortNonNeg(posList, posList.Length);
 
-            for(int i = 0; i < neg.Length; i++)
-                this.array[i] = neg[i];
-            for(int i = neg.Length; i < n; i++)
-                this.array[i] = pos[i];
+            // Replacing the first few values in original array with values in the negative array (reverse order)
+            // Then replaces the rest with values in the positive array
+            int counter = 0;
+            for(int i = negList.Length - 1; i >= 0; i--, counter++)
+                this.array[counter] = negList[i] * -1;
+            for(int i = 0; i < posList.Length; i++, counter++)
+                this.array[counter] = posList[i];
         }
     }
 }

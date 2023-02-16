@@ -30,7 +30,32 @@ namespace _433_PA1
         }
 
         private int countInversions(int left, int right)
-        { // complete this function
-        }
+        {   // complete this function
+            if (left == right)
+				return 0;
+			int mid = (left + right) / 2;
+            int inversions = 0;
+			inversions += countInversions(left, mid);
+			inversions += countInversions(mid + 1, right);
+			int i = left;
+			while (i <= right) {
+				mergedArray[i] = array[i];
+				i++;
+			}
+			i = left;
+			int j = mid + 1, k = left;
+			while (i <= mid && j <= right) {
+                if(mergedArray[j] < mergedArray[i]) {
+                    inversions += mid - i + 1;
+                    array[k++] = mergedArray[j++];
+                }
+                else
+                    array[k++] = mergedArray[i++];
+            }
+			while (i <= mid)
+				array[k++] = mergedArray[i++];
+
+            return inversions;
+		}
     }
 }

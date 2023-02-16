@@ -46,20 +46,18 @@ namespace _433_PA1
         }
 
         public int partition(int left, int right, int pivot) { // complete this function, you know what? Maybe I will!
-
-            // Didn't know what to call the counter of numbers less than the pivot without it being too long, so count is fine.
-            int count = 0;
-            int pIndex = 0;
+            // These are set to the first and second just for now because we don't know where they are in the array.
+            int pivotIndex = left, partitionIndex = left - 1;
 
             // Go through the array, count all numbers <= pivot and increment count by 1 everytime. Also find out which index holds pivot.
-            for(int a = 0; a < this.array.Length; a++) {
-                if (this.array[a] == pivot)
-                    pIndex = a;
-                if (this.array[a] <= pivot)
-                    count++;
+            for(int k = left; k <= right; k++) {
+                if (this.array[k] == pivot)
+                    pivotIndex = k;
+                if (this.array[k] <= pivot)
+                    partitionIndex++;
             }
-            swap(pIndex, count);
 
+            swap(pivotIndex, partitionIndex);
             int i = left, j = right;
 
             /*  The arduous partition while-loop. This loop goes through the entire array and swaps the numbers left
@@ -69,12 +67,13 @@ namespace _433_PA1
                 if(this.array[i] <= pivot) i++;
                 else if(this.array[j] > pivot) j--;
                 else {
-                    swap(this.array[i], this.array[j]);
+                    swap(i, j);
                     i++;
+                    j--;
                 }
             }
 
-            return pIndex;
+            return partitionIndex;
         }
     }
 }

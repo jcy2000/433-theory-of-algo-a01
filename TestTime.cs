@@ -204,7 +204,7 @@ namespace _433_PA1
             }
         }
 
-        public static void Main(String[] args)
+        public static void testTime()
         {
             rand = new Random((int)(currentTimeMillis()));
             Console.WriteLine("*** Time Test Sorting ***\n");

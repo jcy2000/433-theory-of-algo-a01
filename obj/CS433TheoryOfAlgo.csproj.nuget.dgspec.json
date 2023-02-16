@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\CS433TheoryOfAlgo\\CS433TheoryOfAlgo.csproj": {}
+    "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\cs433-theory-of-algo-a01\\422-theory-of-algo-a01\\CS433TheoryOfAlgo.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\CS433TheoryOfAlgo\\CS433TheoryOfAlgo.csproj": {
+    "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\cs433-theory-of-algo-a01\\422-theory-of-algo-a01\\CS433TheoryOfAlgo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\CS433TheoryOfAlgo\\CS433TheoryOfAlgo.csproj",
+        "projectUniqueName": "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\cs433-theory-of-algo-a01\\422-theory-of-algo-a01\\CS433TheoryOfAlgo.csproj",
         "projectName": "CS433TheoryOfAlgo",
-        "projectPath": "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\CS433TheoryOfAlgo\\CS433TheoryOfAlgo.csproj",
+        "projectPath": "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\cs433-theory-of-algo-a01\\422-theory-of-algo-a01\\CS433TheoryOfAlgo.csproj",
         "packagesPath": "C:\\Users\\jcy_y\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\CS433TheoryOfAlgo\\obj\\",
+        "outputPath": "c:\\Users\\jcy_y\\Desktop\\Tech\\VS_Code\\cs433-theory-of-algo-a01\\422-theory-of-algo-a01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcy_y\\AppData\\Roaming\\NuGet\\NuGet.Config"
